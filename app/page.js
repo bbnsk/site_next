@@ -50,6 +50,7 @@ export default function Home() {
       target?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 80);
   };
+// redeploy test
 
   return (
     <main className="relative flex flex-col items-center justify-start min-h-screen overflow-hidden bg-black text-white">
