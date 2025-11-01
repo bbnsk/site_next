@@ -138,7 +138,7 @@ export default function Home() {
         <div className="albums space-y-20 px-6 py-16 relative z-10 max-w-6xl mx-auto">
           {/* Album 1 */}
           <div className="album1 relative">
-            <h3 className="text-3xl mb-6 uppercase tracking-wide text-gray-200">2. "Rebirth"</h3>
+            <h3 className="text-3xl mb-6 uppercase tracking-wide text-gray-200">2. &quot;Rebirth&quot;</h3>
 
             {/* Верхний грид: только первые 4 видео */}
             <div className="media-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center">
@@ -189,7 +189,7 @@ export default function Home() {
           {/* Album 2 */}
           <div className="album2">
             <h3 className="text-3xl mb-6 uppercase tracking-wide text-gray-200">
-              2."The Glass Bead Game" <span style={{ color: "#FBBF24" }}>(en cours)</span>
+              2. &quot;The Glass Bead Game&quot; <span style={{ color: "#FBBF24" }}>(en cours)</span>
             </h3>
             <div className="media-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center">
               {album2Videos.map((id) => (
