@@ -1,0 +1,74 @@
+/* --- GALERIE --- */
+.galerie-page {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.galerie-title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+  text-align: center;
+  margin: 2rem 0;
+  text-shadow: 0 0 20px rgba(0, 200, 255, 0.896),
+    0 0 40px rgba(0, 242, 255, 0.895);
+  font-family: "Cinzel", serif;
+  z-index: 2;
+}
+
+/* --- FULLSCREEN GRID --- */
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr));
+  width: 100vw;
+  min-height: 100vh;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.galerie-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.galerie-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease, filter 0.4s ease;
+  transform-origin: center;
+}
+
+.galerie-item:hover {
+  z-index: 10;
+}
+
+.galerie-item:hover .galerie-image {
+  transform: scale(1.1);
+}
+
+/* --- Адаптив --- */
+@media (max-width: 1024px) {
+  .galerie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .galerie-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .galerie-title {
+    font-size: 3rem;
+  }
+}

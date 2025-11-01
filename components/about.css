@@ -1,0 +1,133 @@
+/* components/about.css */
+
+/* общий контейнер секции */
+.ab-about {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  background: radial-gradient(circle at 20% 10%, #0b0c2a 0%, #000 100%);
+  padding: 40px 4%;
+  box-sizing: border-box;
+}
+
+/* stars container full width - positioned absolute behind content */
+.ab-stars-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  transition: transform 0.12s linear;
+}
+
+/* star and comet styles */
+.ab-star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px rgba(150, 200, 255, 0.25));
+}
+
+.ab-comet {
+  position: absolute;
+  left: -120px;
+  width: 5px;
+  height: 5px;
+  background: linear-gradient(90deg, rgba(180,240,255,1), rgba(255,255,255,1));
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(150, 220, 255, 0.9);
+}
+
+/* внутренний контент (двухколоночная сетка) */
+.ab-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* левая колонка (текст) */
+.ab-left {
+  padding: 20px 0;
+}
+.ab-title {
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  margin: 0 0 12px;
+  text-shadow: 0 0 20px rgba(200,220,255,0.25);
+}
+.ab-desc {
+  color: #cfd8ff;
+  max-width: 540px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* правая колонка — карусель */
+.ab-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* viewport */
+.ab-track-viewport {
+  width: 100%;
+  max-width: 720px;    /* ширина карусели - меняй по необходимости */
+  height: 420px;       /* высота блока: меняй тут */
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.55));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* track — flex row, слайды 100% ширины viewport */
+.ab-track {
+  display: flex;
+  height: 100%;
+  transform: translateX(0);
+}
+
+/* каждый слайд (флекс-блок шириной 100% viewport) */
+.ab-slide {
+  width: 100%;
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+/* изображение — одинаковый размер, обрезается аккуратно */
+.ab-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(20, 40, 80, 0.55), 0 4px 20px rgba(0,160,220,0.12);
+  transition: transform 700ms cubic-bezier(.22,.9,.3,1), filter 700ms;
+  transform: scale(0.98);
+  filter: brightness(0.92) contrast(0.98);
+}
+
+/* активный слайд (в JS мы просто двигаем track, но для эффекта можно подсвечивать видимый слайд через :nth-child — не требуется) */
+.ab-slide-img:focus,
+.ab-slide-img:hover {
+  transform: scale(1.02);
+  filter: brightness(1) contrast(1);
+}
+
+/* responsive */
+@media (max-width: 980px) {
+  .ab-inner { grid-template-columns: 1fr; gap: 28px; }
+  .ab-track-viewport { max-width: 100%; height: 320px; }
+}
+

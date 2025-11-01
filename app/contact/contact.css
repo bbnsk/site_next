@@ -1,0 +1,191 @@
+.contact-section {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 50%, #0a0a0f 0%, #000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  color: #f2f2f2;
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.05em;
+  overflow: hidden; 
+}
+
+/* --- STARS BACKGROUND --- */
+.stars-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none; /* 💫 важное! звезды не блокируют клики */
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px white;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px white;
+  animation: twinkle 20s ease-in-out infinite; /* 🌙 медленное мерцание */
+}
+
+
+.comet {
+  position: absolute;
+  left: -200px;
+  width: 3px;
+  height: 3px;
+  background: linear-gradient(90deg, white, rgba(255,255,255,0));
+  border-radius: 50%;
+  filter: drop-shadow(0 0 8px white);
+}
+
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(30, 30, 40, 0.8);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 191, 255, 0.2);
+  position: relative; /* создаёт новый слой */
+  z-index: 1; /* форма теперь поверх звёзд */
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0, 200, 255, 0.896),
+    0 0 40px rgba(0, 242, 255, 0.895);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  letter-spacing: 0.2em;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 15px;
+  color: #00b3ff;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 12px;
+  background: linear-gradient(90deg, #4b6bb717, #2fc1ff56);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.2em;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  color: #ffffff;
+  background-color: rgba(100, 224, 255, 0.338);
+  box-shadow: 0 0 25px rgba(173, 216, 230, 0.9),
+              0 0 50px rgba(150, 200, 255, 0.8);
+  transform: scale(1.05);
+  transition: 0.8s;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #4b6bb717, #2fc1ff56);
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+}
+
+.social-icons a svg {
+  width: 35px;
+  height: 35px;
+}
+
+.social-icons a:hover {
+  background-color: rgba(100, 224, 255, 0.338);
+  box-shadow: 0 0 25px rgba(173, 216, 230, 0.9),
+              0 0 50px rgba(150, 200, 255, 0.8);
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+.follow-title {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 1.3rem;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  font-weight: bolder;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+  }
+}
