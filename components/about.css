@@ -139,6 +139,13 @@
   .ab-track-viewport { max-width: 100%; height: 320px; }
 }
 
+@media (max-width: 980px) {
+  .ab-carousel {
+    margin-top: -50px;
+  }
+}
+
+
 /* кнопка */
 .contact-btn {
   display: left;
