@@ -138,7 +138,7 @@ export default function Home() {
         <div className="albums space-y-20 px-6 py-16 relative z-10 max-w-6xl mx-auto">
           {/* Album 1 */}
           <div className="album1 relative">
-            <h3 className="text-3xl mb-6 uppercase tracking-wide text-gray-200">2. &quot;Rebirth&quot;</h3>
+            <h3 className="text-3xl mb-6 uppercase tracking-wide text-gray-200">1. &quot;Rebirth&quot;</h3>
 
             {/* Верхний грид: только первые 4 видео */}
             <div className="media-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center">
