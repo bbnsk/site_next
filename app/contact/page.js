@@ -74,11 +74,22 @@ export default function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Your message as sent");
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const response = await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData),
+  });
+
+  if (response.ok) {
+    alert("✅ Your message has been sent successfully!");
     setFormData({ name: "", email: "", subject: "music", message: "" });
-  };
+  } else {
+    alert("❌ Something went wrong. Please try again later.");
+  }
+};
 
   return (
     <section className="contact-section">
