@@ -72,3 +72,61 @@
     font-size: 3rem;
   }
 }
+
+.gallery-icon {
+  justify-content: center;
+  gap: 25px;
+  margin-top: 1px;
+  bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.gallery-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 40px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #4b6bb72f, #2fc1ff34);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.2);
+  margin-bottom: 5px;
+}
+
+.gallery-icon a svg {
+  width: 35px;
+  height: 35px;
+}
+
+.gallery-icon a:hover {
+  background-color: rgba(100, 224, 255, 0.338);
+  box-shadow: 0 0 25px rgba(173, 216, 230, 0.9),
+              0 0 50px rgba(150, 200, 255, 0.8);
+  transform: scale(1.1);
+  transition: 0.8s;
+}
+
+.tittle-insta {
+  text-align: center;
+  display:grid;
+  grid-column: 2;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Cinzel", serif;
+  font-weight: bolder;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+  }
+}

@@ -92,7 +92,7 @@ export default function Home() {
 
         <a
           href="/gallery"
-          className="banner-btn listen-all-btn"
+          className="banner-btn"
           rel="noopener noreferrer"
         >
           Open the gallery
@@ -185,11 +185,10 @@ export default function Home() {
             </div>
           </div>
 
-
           {/* Album 2 */}
           <div className="album2">
             <h3 className="text-3xl mb-6 uppercase tracking-wide text-gray-200">
-              2. &quot;The Glass Bead Game&quot; <span style={{ color: "#FBBF24" }}>(en cours)</span>
+              2. &quot;The Glass Bead Game&quot; <span style={{ color: "#FBBF24" }}>(in progress)</span>
             </h3>
             <div className="media-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center">
               {album2Videos.map((id) => (

@@ -48,6 +48,7 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: -40px;
 }
 
 /* левая колонка (текст) */
@@ -63,6 +64,13 @@
   color: #cfd8ff;
   max-width: 540px;
   margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.ab-desc2 p{
+  color: #cfd8ff;
+  max-width: 540px;
+
   line-height: 1.6;
 }
 
@@ -127,7 +135,84 @@
 
 /* responsive */
 @media (max-width: 980px) {
-  .ab-inner { grid-template-columns: 1fr; gap: 28px; }
+  .ab-inner { grid-template-columns: 1fr; gap: 1px; margin-bottom: 2px;}
   .ab-track-viewport { max-width: 100%; height: 320px; }
 }
 
+/* кнопка */
+.contact-btn {
+  display: left;
+  width: 10vw;
+  bottom: -40px;
+  position: absolute;
+  margin: 20px auto; /* центрирование без отрицательных отступов */
+  text-align: center;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #4b6bb717, #2aabe3a6);
+  transition: 0.4s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1080px) {
+  .contact-btn {
+    padding: 8px 25px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 28px;
+    bottom: -45px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-btn {
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 0.65rem;
+    border-radius: 28px;
+    bottom: -25px;
+    width: 60px;
+  }
+}
+
+.contact-btn:hover::before {
+  opacity: 1;
+  animation: pulseGlow 2s infinite;
+}
+
+.contact-btn:hover:hover {
+  background: linear-gradient(90deg, #6dd4fa38, #297fb938);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+}
+
+/* Нежная пульсация */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+.contact-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.3), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+@media (max-width: 550px) {
+  .contact-btn {
+    padding: 10px 22px;
+    font-size: 0.65rem;
+    border-radius: 28px;
+    margin-bottom: 0px; 
+  }
+}

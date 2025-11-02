@@ -51,18 +51,20 @@ export default function Galerie() {
       </div>
       
 {/* --- КНОПКИ ВНИЗУ --- */}
-<div className="flex justify-center gap-6 mt-16">
-    <a
-    href="https://www.instagram.com/bbnsk.art/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="banner-btn listen-all-btn px-8 py-4 text-lg rounded-full border border-white text-white hover:bg-white hover:text-black transition-all duration-300 inline-flex items-center justify-center"
-    style={{ display: "inline-flex", width: 300, margin: 30, marginBottom: 10 }}
-  >
-    Instagram
-  </a>
 
-</div>
+      {/* иконки*/}
+      <h2 className="tittle-insta">All relevants on my instagram:</h2>
+        <div className="gallery-icon">
+          <a href="https://www.instagram.com/bbnsk.art/" target="_blank" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M7.5 2h9A5.5 5.5 0 0122 7.5v9A5.5 5.5 0 0116.5 22h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <circle cx="17.5" cy="4.5" r="0.5" fill="currentColor" />
+            </svg>
+          </a>
+
+        </div>
+
 
        </main>
   );

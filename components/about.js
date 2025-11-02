@@ -3,6 +3,9 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import "./about.css";
+import Image from "next/image";
+
+
 
 export default function About() {
   // список картинoк (меняй тут — public/images/*.jpg)
@@ -13,12 +16,9 @@ export default function About() {
     "/images/23.jpg",
     "/images/24.jpg",
     "/images/25.jpg",
-    "/images/26.jpg",
     "/images/27.jpg",
     "/images/28.jpg",
     "/images/29.jpg",
-    "/images/30.jpg",
-    "/images/31.jpg",
     "/images/32.jpg",
     "/images/33.jpg",
     "/images/34.jpg"
@@ -36,7 +36,7 @@ export default function About() {
       setCurrent((s) => (s + 1) % images.length);
     }, 4000);
     return () => clearInterval(autoplayRef.current);
-  }, []); // images — константа внутри компонента, безопасно
+  }, [images.length]); // images — константа внутри компонента, безопасно
 
   // ------ touch/mouse swipe handlers ------
   useEffect(() => {
@@ -57,7 +57,7 @@ export default function About() {
       if (!isDown) return;
       const x = e.touches ? e.touches[0].clientX : e.clientX;
       deltaX = x - startX;
-      const width = track.parentElement.clientWidth;
+
       track.style.transform = `translateX(calc(-${current * 100}% + ${deltaX}px))`;
     };
     const onEnd = () => {
@@ -176,15 +176,13 @@ export default function About() {
             Through piano music and paintings, I share fragments of my inner world — my stories, emotions, and moments in time.
             My music carries a romantic melancholy, while my paintings reflect the surreal tension of today’s world.
           </p>
-
           <a 
-            className="banner-btn listen-all-btn discover-btn"
+            className="contact-btn"
             href="./contact"
             rel="noopener noreferrer"
           >
             CONTACT
           </a>
-
         </div>
 
         <div className="ab-carousel">
@@ -192,7 +190,14 @@ export default function About() {
             <div ref={trackRef} className="ab-track">
               {images.map((src, i) => (
                 <div className="ab-slide" key={i}>
-                  <img src={src} alt={`art ${i}`} className="ab-slide-img" />
+                  <Image
+                    src={src}
+                    alt={`art ${i}`}
+                    className="ab-slide-img"
+                    width={800}
+                    height={600}
+                  />
+
                 </div>
               ))}
             </div>

@@ -165,62 +165,6 @@ iframe:hover {
   }
 }
 
-/* Кнопка слушать весь альбом */
-/* ==== Кнопка Écouter tout l’album ==== */
-
-
-/* кнопка */
-.listen-all-btn::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 25px;
-  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.3), transparent 70%);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  z-index: -1;
-}
-
-.listen-all-btn {
-  display: block;
-  position: relative; 
-  margin: 30px auto 0;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: rgb(255, 255, 255);
-  background: linear-gradient(90deg, #4b6bb717, #2aabe3a6);
-  transition: 0.4s;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.listen-all-btn:hover::before {
-  opacity: 1;
-  animation: pulseGlow 2s infinite;
-}
-
-
-.discover-btn {
-  width: 150px;        /* ← можешь поставить любое значение */
-  display: inline-block; /* чтобы ширина применилась к ссылке */
-  text-align: center;    /* выравнивает текст по центру */
-}
-
-.listen-all-btn:hover:hover {
-  background: linear-gradient(90deg, #6dd4fa38, #297fb938);
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
-}
-
-
-/* Нежная пульсация */
-@keyframes pulseGlow {
-  0%, 100% { opacity: 0.4; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.1); }
-}
-
 
 .album2 {
   flex: 1;
@@ -247,10 +191,6 @@ p {
   color: #ccc;
   max-width: 700px;
   margin: 0 auto 2rem;
-}
-
-.listen-all-btn {
-  margin-top: 30px;
 }
 
 /* Слайдер — контейнер */
@@ -304,32 +244,56 @@ p {
   opacity: 0.0;
 }
 
-/* ==== Кнопка для баннера ==== 
+/* кнопка */
+
 .banner-btn {
-  padding: 12px 32px;
-  color: #f8feff;
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, #4b6bb717, #2aabe3a6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  z-index: 50;
+  transition: transform 0.6s ease, box-shadow 0.6s ease, color 0.3s ease;
+  perspective: 800px; /* создаёт эффект глубины */
 }
-*/
+
+.banner-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 25px;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.3), transparent 70%);
+  z-index: -1;
+}
+
 .banner-btn:hover {
   color: #ffffff;
+  -webkit-text-stroke: #1b192c;
   background-color: rgba(100, 224, 255, 0.338);
   box-shadow: 0 0 25px rgba(173, 216, 230, 0.9),
               0 0 50px rgba(150, 200, 255, 0.8);
-  transform: scale(1.05);
-  transition: 0.8s;
+  transform: translateX(-50%) scale(1.1) translateZ(15px); /* "зуминг" на зрителя */
+  transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out, color 0.3s ease;
 }
 
-/* --- Исправление положения кнопки на слайдере --- */
-#slider .banner-btn {
-  position: absolute;
-  bottom: 40px; /* можно 28px, если хочешь ближе */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 50; /* чтобы не перекрывал логотип */
+@media (max-width: 550px) {
+  .banner-btn {  
+    margin-bottom: 0px;
+    padding: 10px 22px;
+    font-size: 0.65rem;
+    border-radius: 28px;
+    text-align: center;
+  }
 }
-
 
 /* === ЛОГО НА СЛАЙДЕРЕ === */
 #slider h1 {
