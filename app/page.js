@@ -142,7 +142,7 @@ export default function Home() {
 
             {/* Верхний грид: только первые 4 видео */}
             <div className="media-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center">
-              {album1Videos.slice(0, 4).map((id) => (
+              {album1Videos.slice(0, 2).map((id) => (
                 <div key={id} className="video-wrapper">
                   <iframe
                     src={`https://www.youtube.com/embed/${id}`}
@@ -169,7 +169,7 @@ export default function Home() {
             {/* Скрытые видео (разворачиваются) */}
             <div className={`album1-more mt-8 ${showMore ? "show" : ""}`}>
               <div className="media-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 justify-center">
-                {album1Videos.slice(4).map((id) => (
+                {album1Videos.slice(2, 7).map((id) => (
                   <div key={id} className="video-wrapper">
                     <iframe
                       src={`https://www.youtube.com/embed/${id}`}

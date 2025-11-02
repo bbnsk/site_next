@@ -33,10 +33,10 @@ iframe:hover {
 }
 
 /* Секция музыка */
-/* --- Секция Musique --- */
+/* --- СЕКЦИЯ MUSIQUE --- */
 #musique {
   padding: 80px 24px;
-  background-color: #1a1a1a;
+  background-color: #fd8181;
   color: white;
 }
 
@@ -46,58 +46,52 @@ iframe:hover {
   text-align: center;
 }
 
-/* Контейнер альбомов */
+/* --- КОНТЕЙНЕР АЛЬБОМОВ --- */
 .albums {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  align-items: center;
+  gap: 4rem; /* можно убрать, если используешь space-y-20 */
   max-width: 1400px;
   margin: 0 auto;
 }
 
-@media (min-width: 1024px) {
+/* на больших экранах — в линию */
+@media (min-width: 1400px) {
   .albums {
     flex-direction: row;
-    gap: 5rem;
     justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
   }
 }
 
-/* Общие стили для всех альбомов */
-.album1, .album2 {
+/* --- ОБЩИЕ СТИЛИ ДЛЯ АЛЬБОМОВ --- */
+.album1,
+.album2 {
   flex: 1;
+  width: 100%;
 }
 
-.album1 h3, .album2 h3 {
+.album1 h3,
+.album2 h3 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
-.album2 p {
-  color: #ccc;
-  margin-bottom: 1.5rem;
-}
-
-/* Сетка видео */
+/* --- СЕТКА ВИДЕО --- */
 .media-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
-
-@media (min-width: 640px) {
-  .media-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Видео wrapper с overlay */
+/* --- ВИДЕО WRAPPER --- */
 .video-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  cursor: pointer;
 }
 
 .video-wrapper iframe {
@@ -107,71 +101,47 @@ iframe:hover {
   border-radius: 12px;
 }
 
-/* Overlay для клика и Play */
-.video-wrapper .overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0,0,0,0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.video-wrapper:hover .overlay {
-  opacity: 1;
-}
-
-.video-wrapper .overlay span {
-  padding: 0.5rem 1rem;
-  border: 1px solid white;
-  border-radius: 9999px;
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.video-wrapper .overlay span:hover {
-  background-color: white;
-  color: black;
-}
-
-/* === АДАПТАЦИЯ ДЛЯ БЛОКА АЛЬБОМА 2 И КНОПОК MORE/LESS === */
-@media (max-width: 1068px) {
-  .album2 {
-    margin-top: -70px;
+/* --- АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И МАЛЫХ НОУТБУКОВ --- */
+@media (max-width: 1280px) {
+  .albums {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
 
+  .album1,
+  .album2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .album1 h3,
+  .album2 h3 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .album2 h3 span {
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+
+  .media-grid {
+    gap: 1rem;
+  }
+}
+
+/* --- КНОПКИ "MORE/LESS" --- */
+@media (max-width: 1080px) {
   .scroll-btn-full {
-    height: 68px;
+    height: 64px;
     font-size: 0.9rem;
     padding: 12px 0;
     letter-spacing: 0.05em;
     margin-top: 0.5rem;
   }
-
 }
 
-@media (max-width: 1080px) {
-  .scroll-btn-full {
-    height: 58px;
-    font-size: 0.85rem;
-    padding: 10px 0;
-    margin-top: 105px;
-  }
-
-  .scroll-btn-full + .scroll-btn-full {
-    margin-top: 0.4rem;
-  }
-}
-
-
-.album2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
 
 /* ==== Welcome Section ==== */
 #welcome {
