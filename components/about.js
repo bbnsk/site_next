@@ -174,7 +174,7 @@ export default function About() {
             <span style={{ color: "#71f6ffff", }}>Anastasia Babanska</span> — composer and artist from Kyiv, Ukraine, now based in France.
             </p>
             <p className="ab-desc">
-            Through piano music and paintings, I share fragments of my inner world — my stories, emotions, and moments in time.
+            Through piano music and paintings, I share fragments of my inner world — my stories, emotions and moments in time.
             My music carries a romantic melancholy and anxiety, while my paintings reflect the surreal tension of today’s world.
           </p>
           <a 
