@@ -1,11 +1,6 @@
 "use client";
 import "./contact.css";
 import { useState, useRef, useEffect } from "react";
-export const metadata = {
-  title: "Contact | Anastasia Babanska",
-  description: "Get in touch with Anastasia Babanska — for exhibitions, collaborations or film scoring inquiries.",
-};
-
 
 export default function Contact() {
   const [formData, setFormData] = useState({
