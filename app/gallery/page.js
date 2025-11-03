@@ -54,7 +54,7 @@ export default function Galerie() {
 {/* --- КНОПКИ ВНИЗУ --- */}
 
       {/* иконки*/}
-      <h2 className="tittle-insta">All relevants on my instagram:</h2>
+      <h2 className="tittle-insta">More on my instagram:</h2>
         <div className="gallery-icon">
           <a href="https://www.instagram.com/bbnsk.art/" target="_blank" aria-label="Instagram">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
