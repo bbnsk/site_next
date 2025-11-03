@@ -422,17 +422,43 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://bbnsk.vercel.app",
-    languages: {
-      "en-US": "/en",
-      "fr-FR": "/fr",
-      "uk-UA": "/ua",
-    },
+
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Schema.org structured data for Google */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Anastasia Babanska",
+              "alternateName": "Bbnsk",
+              "url": "https://bbnsk.vercel.app",
+              "image": "https://bbnsk.vercel.app/preview.jpg",
+              "jobTitle": "Artist & Composer",
+              "description":
+                "Anastasia Babanska — multidisciplinary artist and pianist based in France. Her works combine surrealism, sound, and emotion.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "France",
+              },
+              "sameAs": [
+                "https://www.instagram.com/bbnsk.art",
+                "https://www.youtube.com/AnastasiaBabanska",
+                "https://soundcloud.com/anastasia-babanska",
+                "https://open.spotify.com/artist/70DqE4HUO60Ra1sBZztRIW",
+                "https://music.apple.com/za/artist/anastasia-babanska/1790922079"
+              ],
+            }),
+          }}
+        />
+      </head>
       <body style={{ margin: 0, padding: 0, overflowX: "hidden" }}>
         <Navbar />
         <main>{children}</main>
