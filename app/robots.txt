@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /private/
 Sitemap: https://bbnsk.vercel.app/sitemap.xml
+Host: https://bbnsk.vercel.app
