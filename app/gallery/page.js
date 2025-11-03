@@ -2,6 +2,11 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import "./gallery.css"; // импортируем стили
+export const metadata = {
+  title: "Gallery | Anastasia Babanska",
+  description: "Explore the visual universe of Anastasia Babanska — surreal paintings, dreamlike compositions, and cosmic art.",
+};
+
 
 export default function Galerie() {
   const images = [

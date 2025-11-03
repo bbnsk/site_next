@@ -4,6 +4,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./about.css";
 import Image from "next/image";
+import { Weight } from "lucide-react";
 
 
 
@@ -170,11 +171,11 @@ export default function About() {
         <div className="ab-left">
           <h2 className="ab-title">Welcome to my universe</h2>
           <p className="ab-desc">
-            Anastasia Babanska — a multidisciplinary creator from Kyiv, Ukraine, now based in France.
+            <span style={{ color: "#71f6ffff", }}>Anastasia Babanska</span> — composer and artist from Kyiv, Ukraine, now based in France.
             </p>
             <p className="ab-desc">
             Through piano music and paintings, I share fragments of my inner world — my stories, emotions, and moments in time.
-            My music carries a romantic melancholy, while my paintings reflect the surreal tension of today’s world.
+            My music carries a romantic melancholy and anxiety, while my paintings reflect the surreal tension of today’s world.
           </p>
           <a 
             className="contact-btn"
