@@ -19,7 +19,9 @@ export default function Navbar() {
         { name: "Apple Music", href: "https://music.apple.com/za/artist/anastasia-babanska/1790922079" },
         { name: "Spotify", href: "https://open.spotify.com/artist/70DqE4HUO60Ra1sBZztRIW" },
         { name: "Deezer", href: "https://www.deezer.com/ru/artist/298563611" },
+        { name: "BandCamp", href: "https://anastasiababanska.bandcamp.com/" },
         { name: "Amazon Music", href: "https://www.amazon.fr/music/player/artists/B0DT7PX93G/anastasia-babanska" },
+
       ],
     },
     { name: "Instagram", href: "https://www.instagram.com/bbnsk.art/" },
