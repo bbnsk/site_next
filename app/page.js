@@ -131,11 +131,11 @@ export default function Home() {
       </div>
     </div>
 
-    {/* --- ALBUM 2: The Glass Bead Game --- */}
-    <div className="album2">
-      <h3 className="text-3xl mb-8 uppercase tracking-wide text-gray-100 font-semibold">
-        2. “The Glass Bead Game”
-        <span className="ml-2 text-yellow-400">(in progress)</span>
+    {/* Album 2 */} 
+    <div className="album2"> 
+      <h3 className="text-3xl mb-6 uppercase tracking-wide text-gray-200"> 
+        2. &quot;The Glass Bead Game&quot;{" "} 
+        <span style={{ color: "#FBBF24" }}>(in progress)</span>
       </h3>
 
            <div className="album-player bg-[#0a0a0a] p-6 rounded-2xl shadow-xl border border-gray-800 hover:shadow-[0_0_25px_rgba(0,204,255,0.6)] transition-all">
