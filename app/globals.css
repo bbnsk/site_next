@@ -88,7 +88,32 @@ iframe:hover {
 }
 
 /* --- АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И МАЛЫХ НОУТБУКОВ --- */
-@media (max-width: 1400px) {
+/* --- ДЛЯ ПЛАНШЕТОВ И СРЕДНИХ ЭКРАНОВ --- */
+@media (max-width: 1399px) and (min-width: 901px) {
+  .albums {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* важно: не center! */
+    gap: 3rem;
+  }
+
+  .album1,
+  .album2 {
+    width: 46%;
+  }
+
+  .album1 h3,
+  .album2 h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .album2 h3 span {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1100px) {
   .albums {
     flex-direction: column;
     align-items: center;
@@ -97,7 +122,7 @@ iframe:hover {
 
   .album1,
   .album2 {
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -121,6 +146,7 @@ iframe:hover {
     gap: 1rem;
   }
 }
+
 
 /* ==== Welcome Section ==== */
 #welcome {
