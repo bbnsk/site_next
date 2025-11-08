@@ -87,20 +87,6 @@ iframe:hover {
   gap: 1.5rem;
 }
 
-/* --- ВИДЕО WRAPPER --- */
-.video-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.video-wrapper iframe {
-  display: block;
-  width: 100%;
-  height: 200px;
-  border-radius: 12px;
-}
-
 /* --- АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И МАЛЫХ НОУТБУКОВ --- */
 @media (max-width: 1400px) {
   .albums {
@@ -135,18 +121,6 @@ iframe:hover {
     gap: 1rem;
   }
 }
-
-/* --- КНОПКИ "MORE/LESS" --- */
-@media (max-width: 1080px) {
-  .scroll-btn-full {
-    height: 64px;
-    font-size: 0.9rem;
-    padding: 12px 0;
-    letter-spacing: 0.05em;
-    margin-top: 0.5rem;
-  }
-}
-
 
 /* ==== Welcome Section ==== */
 #welcome {
@@ -357,7 +331,8 @@ p {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2px; /* пространство между кнопкой и футером */
+  margin-top: 10px;
+  margin-bottom: -10px; /* пространство между кнопкой и футером */
   box-sizing: border-box;
 }
 
@@ -414,55 +389,6 @@ p {
     font-size: 0.95rem;
     border-radius: 28px;
   }
-}
-
-
-/* занимает всю ширину внутри .videos grid */
-.scroll-btn-full {
-  grid-column: 1 / -1; /* обязательно, чтобы занять все колонки сетки */
-  justify-self: stretch;
-  margin-top: 0.5rem;
-  background: linear-gradient(90deg, #4b6bb717, #2fc1ff56);
-  color: rgb(0, 204, 255);
-  border: none;
-  padding: 16px 0;
-  width: 100%;
-  border-radius: 6px; /* можно 0 если хочешь без скругления */
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  cursor: pointer;
-  transition: transform 0.28s ease, box-shadow 0.28s ease;
-  height: 82px; /* чтобы визуально занимала ~ 1/4 высоты видео (подкорректируй) */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 30px rgba(0, 191, 255, 0.06);
-}
-
-/* hover */
-.scroll-btn-full:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 191, 255, 0.12);
-  background: linear-gradient(90deg, #6dd4fa38, #297fb938);
-}
-
-/* скрытый блок (если ты хочешь альтернативную версию без unmount) */
-
-.album1-more {
-  margin-top: 1rem;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transform: scaleY(0.98);
-  transition: all 1.2s ease;
-}
-
-.album1-more.show {
-  max-height: 2000px; /* просто большое число */
-  opacity: 1;
-  transform: scaleY(1);
 }
 
 .footer {
