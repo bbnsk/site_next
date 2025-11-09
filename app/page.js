@@ -112,7 +112,7 @@ export default function Home() {
         1. “Rebirth”
       </h3>
 
-      <div className="album-player bg-[#0a0a0a] p-6 rounded-2xl shadow-xl border border-gray-800 hover:shadow-[0_0_25px_rgba(0,204,255,0.6)] transition-all">
+      <div className="album-player p-6 rounded-2xl shadow-xl hover:shadow-[0_0_25px_rgba(0,204,255,0.6)] transition-all">
         <iframe
           style={{
             border: 0,
@@ -138,7 +138,7 @@ export default function Home() {
         <span style={{ color: "#FBBF24" }}>(in progress)</span>
       </h3>
 
-           <div className="album-player bg-[#0a0a0a] p-6 rounded-2xl shadow-xl border border-gray-800 hover:shadow-[0_0_25px_rgba(0,204,255,0.6)] transition-all">
+           <div className="album-player p-6 rounded-2xl shadow-xl hover:shadow-[0_0_25px_rgba(0,204,255,0.6)] transition-all">
         <iframe
           style={{
             border: 0,
