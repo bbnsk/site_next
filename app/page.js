@@ -111,7 +111,7 @@ export default function Home() {
     {/* --- ALBUM 1: Rebirth (Bandcamp) --- */}
     <div className="album1">
       <h3 className="text-3xl mb-8 uppercase tracking-wide text-gray-100 font-semibold">
-        1. “Rebirth”
+        1. &quot;Rebirth&quot;{" "}
       </h3>
 
       <div className="album-player p-6 rounded-2xl shadow-xl hover:shadow-[0_0_25px_rgba(0,204,255,0.6)] transition-all">
@@ -127,7 +127,6 @@ export default function Home() {
           title="Rebirth de Anastasia Babanska"
         >
           <a href="https://anastasiababanska.bandcamp.com/album/rebirth">
-            Rebirth de Anastasia Babanska
           </a>
         </iframe>
       </div>
@@ -153,7 +152,6 @@ export default function Home() {
           title="Rebirth de Anastasia Babanska"
         >
           <a href="https://anastasiababanska.bandcamp.com/album/rebirth">
-            Rebirth de Anastasia Babanska
           </a>
         </iframe>
       </div>

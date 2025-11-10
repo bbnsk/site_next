@@ -152,12 +152,12 @@
 
 @media (max-width: 600px) {
   .ab-inner { grid-template-columns: 1fr; gap: 1px; margin-bottom: 2px;}
-  .ab-track-viewport { max-width: 70%; height: 300px; }
+  .ab-track-viewport { max-width: 80%; height: 300px; }
 }
 
 @media (max-width: 441px) {
   .ab-inner { grid-template-columns: 1fr; gap: 1px; margin-bottom: 2px;}
-  .ab-track-viewport { max-width: 80%; height: 250px; }
+  .ab-track-viewport { max-width: 90%; height: 250px; }
 }
 
 @media (max-width: 320px) {
