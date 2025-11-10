@@ -84,7 +84,7 @@ export default function Home() {
   style={{ paddingTop: "0vh" }}
 >
   <div
-    className="relative uppercase w-full flex items-center justify-center text-white text-6xl md:text-7xl tracking-[0.25em] z-20 my-8"
+    className="relative uppercase w-full flex items-center justify-center text-white text-6xl md:text-7xl font-bolder tracking-[0.25em] z-20 my-8"
     style={{
       background: "rgba(50, 50, 50, 0.55)",
       boxShadow: "0 0 30px rgba(0,191,255,0.4)",
@@ -97,14 +97,16 @@ export default function Home() {
       fontFamily: "'Cinzel', serif",
       fontWeight: "bold",
       fontSize: "clamp(2.5rem, 6vw, 6rem)",
+      letterSpacing: "clamp(0.15em, 0.5vw, 0.3em)", // ✅ адаптивный интервал между буквами 
+      marginTop: 0,
     }}
   >
     MY ALBUMS
-  </div>
+  </div> 
 
   <PianoBackground />
 
-  <div className="albums space-y-24 px-6 py-16 relative z-10 max-w-5xl mx-auto">
+  <div className="albums px-6 py-16 relative z-10 max-w-5xl mx-auto">
 
     {/* --- ALBUM 1: Rebirth (Bandcamp) --- */}
     <div className="album1">
@@ -163,7 +165,7 @@ export default function Home() {
     <a href="https://www.youtube.com/@AnastasiaBabanska" 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="listen-all-btn-music mt-8 inline-block" 
+    className="listen-all-btn-music" 
     > 
     Listen all albums 
     </a> 

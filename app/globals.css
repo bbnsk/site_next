@@ -80,6 +80,10 @@ iframe:hover {
   text-align: center;
 }
 
+.album2 h3 span {
+    font-size: 0.95rem;
+  }
+
 /* --- СЕТКА ВИДЕО --- */
 .media-grid {
   display: grid;
@@ -425,7 +429,7 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  margin-bottom: -10px; /* пространство между кнопкой и футером */
+  margin-bottom: 5px; /* пространство между кнопкой и футером */
   box-sizing: border-box;
 }
 
@@ -456,33 +460,51 @@ p {
 
 /* адаптив */
 
-@media (max-width: 1080px) {
-  .listen-btn-wrap { margin-bottom: -65px; }
-  .listen-all-btn-music {
+@media (max-width: 1310px) {
+  .listen-btn-wrap { margin-bottom: 0px; }
+    .listen-all-btn-music {
     padding: 8px 16px;
-    font-size: 0.8rem;      /* ваш желаемый адаптивный размер */
+    font-size: 0.9rem;      /* ваш желаемый адаптивный размер */
     border-radius: 24px;
-    margin: 20px auto 0;    /* убедимся, что margin не negative */
   }
 }
 
-@media (max-width: 780px) {
-  .listen-btn-wrap { margin-bottom: -50px; }
+@media (max-width: 1170px) {
+  .listen-btn-wrap { margin-bottom: 10px; }
   .listen-all-btn-music {
-    padding: 10px 22px;
-    font-size: 0.95rem;
-    border-radius: 28px;
+    padding: 8px 16px;
+    font-size: 0.9rem;      /* ваш желаемый адаптивный размер */
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .listen-btn-wrap { margin-bottom: 10px; }
+  .listen-all-btn-music {
+    padding: 8px 16px;
+    font-size: 0.9rem;      /* ваш желаемый адаптивный размер */
+    border-radius: 24px;
   }
 }
 
 @media (max-width: 550px) {
-  .listen-btn-wrap { margin-bottom: -60px; }
+  .listen-btn-wrap { margin-bottom: 5px; }
   .listen-all-btn-music {
-    padding: 10px 22px;
-    font-size: 0.95rem;
-    border-radius: 28px;
+    padding: 8px 16px;
+    font-size: 0.8rem;      /* ваш желаемый адаптивный размер */
+    border-radius: 24px;
   }
 }
+
+@media (max-width: 460px) {
+  .listen-btn-wrap { margin-bottom: 0px; }
+  .listen-all-btn-music {
+    padding: 8px 16px;
+    font-size: 0.7rem;      /* ваш желаемый адаптивный размер */
+    border-radius: 24px;
+  }
+}
+
 
 .footer {
   position: relative;
