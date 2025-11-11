@@ -17,12 +17,13 @@ export default function About() {
     "/images/23.jpg",
     "/images/24.jpg",
     "/images/25.jpg",
+    "/images/26.jpg",
     "/images/27.jpg",
     "/images/28.jpg",
     "/images/29.jpg",
-    "/images/32.jpg",
-    "/images/33.jpg",
-    "/images/34.jpg"
+    "/images/30.jpg",
+    "/images/31.jpg",
+    "/images/32.jpg"
   ];
 
   const [current, setCurrent] = useState(0);
