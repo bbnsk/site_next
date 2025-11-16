@@ -66,18 +66,21 @@ export default function Home() {
           >
             Bbnsk
           </h1>
+
         </motion.div>
 
         <a href="/gallery" className="banner-btn" rel="noopener noreferrer">
           Open the gallery
         </a>
+
       </section>
 
       {/* --- ABOUT --- */}
+
       <About />
 
       {/* --- МУЗЫКА --- */}
-      {/* --- МУЗЫКА --- */}
+
 <section
   id="musique"
   className="relative w-full text-center py-0 overflow-visible bg-black text-white"
@@ -97,7 +100,7 @@ export default function Home() {
       fontFamily: "'Cinzel', serif",
       fontWeight: "bold",
       fontSize: "clamp(2.5rem, 6vw, 6rem)",
-      letterSpacing: "clamp(0.15em, 0.5vw, 0.3em)", // ✅ адаптивный интервал между буквами 
+      letterSpacing: "clamp(0.15em, 0.5vw, 0.3em)", // адаптивный интервал между буквами 
       marginTop: 0,
     }}
   >

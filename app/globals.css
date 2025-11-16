@@ -33,7 +33,6 @@ iframe:hover {
 }
 
 /* Секция музыка */
-/* --- СЕКЦИЯ MUSIQUE --- */
 #musique {
   padding: 80px 24px;
   background-color: transparent;
@@ -51,7 +50,7 @@ iframe:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem; /* можно убрать, если используешь space-y-20 */
+  gap: 4rem;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -92,7 +91,6 @@ iframe:hover {
 }
 
 /* --- АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И МАЛЫХ НОУТБУКОВ --- */
-/* --- ДЛЯ ПЛАНШЕТОВ И СРЕДНИХ ЭКРАНОВ --- */
 @media (max-width: 1399px) and (min-width: 901px) {
   .albums {
     flex-direction: row;
@@ -243,8 +241,8 @@ p {
 #slider {
   position: relative;
   width: 100%;
-  height: 60vh;              /* можно менять: 50vh/60vh/70vh */
-  min-height: 420px;        /* защита для маленьких экранов */
+  height: 60vh;             
+  min-height: 420px;   
   display: flex;
   justify-content: center;  /* горизонтальный центр */
   align-items: center;      /* вертикальный центр -> ключевая строка */
@@ -260,7 +258,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%); /* точное центрирование */
   z-index: 20;
-  pointer-events: none; /* если кнопки/клики под логотипом важны */
+  pointer-events: none;
   text-align: center;
   line-height: 1;
 }
@@ -422,8 +420,6 @@ p {
 
 
 /* --- КНОПКА МУЗЫКИ ПО ЦЕНТРУ --- */
-/* --- КНОПКА МУЗЫКИ ПО ЦЕНТРУ --- */
-
 .listen-btn-wrap {
   width: 100%;
   display: flex;
@@ -464,7 +460,7 @@ p {
   .listen-btn-wrap { margin-bottom: 0px; }
     .listen-all-btn-music {
     padding: 8px 16px;
-    font-size: 0.9rem;      /* ваш желаемый адаптивный размер */
+    font-size: 0.9rem;    
     border-radius: 24px;
   }
 }
@@ -473,7 +469,7 @@ p {
   .listen-btn-wrap { margin-bottom: 10px; }
   .listen-all-btn-music {
     padding: 8px 16px;
-    font-size: 0.9rem;      /* ваш желаемый адаптивный размер */
+    font-size: 0.9rem;     
     border-radius: 24px;
   }
 }
@@ -482,7 +478,7 @@ p {
   .listen-btn-wrap { margin-bottom: 10px; }
   .listen-all-btn-music {
     padding: 8px 16px;
-    font-size: 0.9rem;      /* ваш желаемый адаптивный размер */
+    font-size: 0.9rem;      
     border-radius: 24px;
   }
 }
@@ -491,7 +487,7 @@ p {
   .listen-btn-wrap { margin-bottom: 5px; }
   .listen-all-btn-music {
     padding: 8px 16px;
-    font-size: 0.8rem;      /* ваш желаемый адаптивный размер */
+    font-size: 0.8rem;      
     border-radius: 24px;
   }
 }
@@ -500,7 +496,7 @@ p {
   .listen-btn-wrap { margin-bottom: 0px; }
   .listen-all-btn-music {
     padding: 8px 16px;
-    font-size: 0.7rem;      /* ваш желаемый адаптивный размер */
+    font-size: 0.7rem;      
     border-radius: 24px;
   }
 }
@@ -532,9 +528,9 @@ p {
 .footer p {
   color: #666;
   font-size: 0.8rem;
-  margin-top: 8px;     /* чуть меньше, чем 15px */
-  margin-bottom: -2px; /* немного пространства снизу */
-  line-height: 1.4;    /* более естественная высота строки */
+  margin-top: 8px;     
+  margin-bottom: -2px; 
+  line-height: 1.4;    
 }
 
 

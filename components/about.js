@@ -1,4 +1,3 @@
-// components/About.js
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -9,7 +8,6 @@ import { Weight } from "lucide-react";
 
 
 export default function About() {
-  // список картинoк (меняй тут — public/images/*.jpg)
   const images = [
     "/images/20.jpg",
     "/images/21.jpg",
@@ -74,7 +72,7 @@ export default function About() {
         // откат
         track.style.transform = `translateX(-${current * 100}%)`;
       }
-      // восстановим автоплей (немного позже)
+      // восстановим автоплей 
       clearInterval(autoplayRef.current);
       autoplayRef.current = setInterval(() => {
         setCurrent((s) => (s + 1) % images.length);

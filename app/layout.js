@@ -3,14 +3,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  metadataBase: new URL("https://bbnsk.vercel.app"), // замени на свой домен, если другой
+  metadataBase: new URL("https://bbnsk.vercel.app"), 
   title: "Bbnsk Art Universe — Anastasia Babanska | Art & Piano",
   description:
     "The artistic universe of Anastasia Babanska — painter and composer. Piano music for films and concerts, surreal and mythological oil paintings in the style of Van Gogh. Emotional, cinematic, and spiritual art.",
   keywords: [
 
     // ENGLISH
-    // 🌍 Main identity
+    // Main identity
     "Anastasia Babanska",
     "Bbnsk Art Universe",
     "piano music",
@@ -39,7 +39,7 @@ export const metadata = {
     "female artist Paris",
     "female composer Europe",
 
-    // 🎹 Music & composition
+    // Music & composition
     "piano music",
     "cinematic piano",
     "ambient piano music",
@@ -57,7 +57,7 @@ export const metadata = {
     "piano composer contemporary",
     "post classical music",
 
-    // 🎨 Painting & visual art
+    // Painting & visual art
     "oil paintings",
     "contemporary surrealism",
     "mythological art",
@@ -75,7 +75,7 @@ export const metadata = {
     "art for collectors",
     "art for galleries",
 
-    // 🎭 Professional context
+    // Professional context
     "art exhibitions Paris",
     "art curator",
     "art dealer",
@@ -90,7 +90,7 @@ export const metadata = {
     "art portfolio",
     "emerging contemporary artist",
 
-    // 🌙 Mood & themes
+    // Mood & themes
     "melancholic art",
     "mystical painting",
     "spiritual art",
@@ -134,7 +134,7 @@ export const metadata = {
 "artiste féminine Paris",
 "compositrice féminine Europe",
 
-// 🎹 Musique & composition
+// Musique & composition
 "musique de piano",
 "piano cinématique",
 "musique de piano ambiante",
@@ -152,7 +152,7 @@ export const metadata = {
 "compositrice de piano contemporaine",
 "musique post-classique",
 
-// 🎨 Peinture & art visuel
+// Peinture & art visuel
 "peintures à l'huile",
 "surréalisme contemporain",
 "art mythologique",
@@ -170,7 +170,7 @@ export const metadata = {
 "art pour collectionneurs",
 "art pour galeries",
 
-// 🎭 Contexte professionnel
+// Contexte professionnel
 "expositions d'art Paris",
 "commissaire d'exposition",
 "marchand d'art",
@@ -185,7 +185,7 @@ export const metadata = {
 "portfolio artistique",
 "artiste contemporaine émergente",
 
-// 🌙 Ambiance & thèmes
+// Ambiance & thèmes
 "art mélancolique",
 "peinture mystique",
 "art spirituel",
@@ -229,7 +229,7 @@ export const metadata = {
 "жінка-художниця Париж",
 "жінка-композиторка Європа",
 
-// 🎹 Музика та композиція
+// Музика та композиція
 "фортепіанна музика",
 "кінематографічне фортепіано",
 "ембієнт музика для фортепіано",
@@ -247,7 +247,7 @@ export const metadata = {
 "сучасна композиторка фортепіано",
 "посткласична музика",
 
-// 🎨 Живопис і візуальне мистецтво
+// Живопис і візуальне мистецтво
 "олійні картини",
 "сучасний сюрреалізм",
 "міфологічне мистецтво",
@@ -265,7 +265,7 @@ export const metadata = {
 "мистецтво для колекціонерів",
 "мистецтво для галерей",
 
-// 🎭 Професійний контекст
+// Професійний контекст
 "виставки мистецтва Париж",
 "куратор мистецтва",
 "артдилер",
@@ -280,7 +280,7 @@ export const metadata = {
 "артпортфоліо",
 "сучасна молода художниця",
 
-// 🌙 Настрій і теми
+// Настрій і теми
 "меланхолічне мистецтво",
 "містичний живопис",
 "духовне мистецтво",
@@ -325,7 +325,7 @@ export const metadata = {
 "weibliche Künstlerin Paris",
 "weibliche Komponistin Europa",
 
-// 🎹 Musik & Komposition
+// Musik & Komposition
 "Klaviermusik",
 "filmisches Klavier",
 "Ambient-Klaviermusik",
@@ -343,7 +343,7 @@ export const metadata = {
 "zeitgenössische Klavierkomponistin",
 "postklassische Musik",
 
-// 🎨 Malerei & visuelle Kunst
+// Malerei & visuelle Kunst
 "Ölgemälde",
 "zeitgenössischer Surrealismus",
 "mythologische Kunst",
@@ -361,7 +361,7 @@ export const metadata = {
 "Kunst für Sammler",
 "Kunst für Galerien",
 
-// 🎭 Beruflicher Kontext
+// Beruflicher Kontext
 "Kunstausstellungen Paris",
 "Kuratorin",
 "Kunsthändlerin",
@@ -376,7 +376,7 @@ export const metadata = {
 "Kunstportfolio",
 "aufstrebende zeitgenössische Künstlerin",
 
-// 🌙 Stimmung & Themen
+// Stimmung & Themen
 "melancholische Kunst",
 "mystische Malerei",
 "spirituelle Kunst",
@@ -401,7 +401,7 @@ export const metadata = {
     siteName: "Bbnsk Art Universe",
     images: [
       {
-        url: "/preview.jpg", // тот файл, который ты создала
+        url: "/preview.jpg", 
         width: 1200,
         height: 630,
         alt: "Anastasia Babanska Art & Piano",

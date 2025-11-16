@@ -12,7 +12,7 @@ export default function Contact() {
 
   const containerRef = useRef(null);
 
-  // 🌌 Звезды и кометы (фон)
+  // Звезды и кометы (фон)
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -68,7 +68,7 @@ export default function Contact() {
     };
   }, []);
 
-  // 🌠 Логика формы
+  // Логика формы
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });

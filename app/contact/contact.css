@@ -18,7 +18,7 @@
   inset: 0;
   overflow: hidden;
   z-index: 0;
-  pointer-events: none; /* 💫 важное! звезды не блокируют клики */
+  pointer-events: none; /* важное! звезды не блокируют клики */
 }
 
 .star {
@@ -42,7 +42,7 @@
   background: white;
   border-radius: 50%;
   box-shadow: 0 0 6px white;
-  animation: twinkle 20s ease-in-out infinite; /* 🌙 медленное мерцание */
+  animation: twinkle 20s ease-in-out infinite; /* медленное мерцание */
 }
 
 
@@ -65,7 +65,7 @@
   border-radius: 20px;
   box-shadow: 0 0 40px rgba(0, 191, 255, 0.2);
   position: relative; /* создаёт новый слой */
-  z-index: 1; /* форма теперь поверх звёзд */
+  z-index: 1; /* форма поверх звёзд */
 }
 
 .contact-title {
