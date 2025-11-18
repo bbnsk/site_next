@@ -430,6 +430,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+
+        {/* analytics */}
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="a72518d0-80fc-4da8-8412-3f90ef83a9b3"></script>
+
         {/* Schema.org structured data for Google */}
         <script
           type="application/ld+json"
